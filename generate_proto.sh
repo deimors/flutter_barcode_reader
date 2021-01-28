@@ -1,5 +1,6 @@
 #!/bin/bash
 PROTO_OUT_FILE="./protos/protos.proto"
+LIB_OUT_DIR="./lib/gen"
 
 if [ -f "$PROTO_OUT_FILE" ]; then
   echo "Deleting old $PROTO_OUT_FILE"
@@ -21,6 +22,7 @@ for f in protos/*.proto; do
   if [ "./$f" = $PROTO_OUT_FILE ]; then
     continue ;
   fi;
+  echo "Adding $f";
   (
     echo "// $f";
     ## Remove duplicate headers
@@ -29,8 +31,9 @@ for f in protos/*.proto; do
   ) >> $PROTO_OUT_FILE;
 done
 
+echo "Generating in $LIB_OUT_DIR"
 
 protoc \
---dart_out="./lib/gen" \
+--dart_out="$LIB_OUT_DIR" \
 "$PROTO_OUT_FILE"
 

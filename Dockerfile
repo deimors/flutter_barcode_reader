@@ -1,6 +1,6 @@
 # Build and Run on Windows
 #  docker build -t flutter_barcode_protoc:latest ./
-#  docker run -it -v %cd%\protos:/work/protos -v %cd%\lib:/work/lib -v %cd%\ios:/work/ios flutter_barcode_protoc:latest
+#  docker run -it -v %cd%\protos:/work/protos -v %cd%\lib:/work/lib flutter_barcode_protoc:latest
 
 FROM google/dart:latest
 
