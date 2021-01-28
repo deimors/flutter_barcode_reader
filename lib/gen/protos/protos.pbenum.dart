@@ -20,8 +20,9 @@ class BarcodeFormat extends $pb.ProtobufEnum {
   static const BarcodeFormat dataMatrix = BarcodeFormat._(7, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'dataMatrix');
   static const BarcodeFormat qr = BarcodeFormat._(8, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'qr');
   static const BarcodeFormat interleaved2of5 = BarcodeFormat._(9, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'interleaved2of5');
-  static const BarcodeFormat upce = BarcodeFormat._(10, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'upce');
-  static const BarcodeFormat pdf417 = BarcodeFormat._(11, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'pdf417');
+  static const BarcodeFormat upca = BarcodeFormat._(10, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'upca');
+  static const BarcodeFormat upce = BarcodeFormat._(11, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'upce');
+  static const BarcodeFormat pdf417 = BarcodeFormat._(12, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'pdf417');
 
   static const $core.List<BarcodeFormat> values = <BarcodeFormat> [
     unknown,
@@ -34,6 +35,7 @@ class BarcodeFormat extends $pb.ProtobufEnum {
     dataMatrix,
     qr,
     interleaved2of5,
+    upca,
     upce,
     pdf417,
   ];

@@ -18,8 +18,9 @@ const BarcodeFormat$json = const {
     const {'1': 'dataMatrix', '2': 7},
     const {'1': 'qr', '2': 8},
     const {'1': 'interleaved2of5', '2': 9},
-    const {'1': 'upce', '2': 10},
-    const {'1': 'pdf417', '2': 11},
+    const {'1': 'upca', '2': 10},
+    const {'1': 'upce', '2': 11},
+    const {'1': 'pdf417', '2': 12},
   ],
 };
 

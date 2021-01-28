@@ -36,7 +36,8 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
                 Protos.BarcodeFormat.interleaved2of5 to BarcodeFormat.ITF,
                 Protos.BarcodeFormat.pdf417 to BarcodeFormat.PDF_417,
                 Protos.BarcodeFormat.qr to BarcodeFormat.QR_CODE,
-                Protos.BarcodeFormat.upce to BarcodeFormat.UPC_E
+                Protos.BarcodeFormat.upce to BarcodeFormat.UPC_E,
+                Protos.BarcodeFormat.upca to BarcodeFormat.UPC_A
         )
 
     }

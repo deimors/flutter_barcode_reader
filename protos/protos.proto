@@ -31,8 +31,9 @@ enum BarcodeFormat {
     dataMatrix = 7;
     qr = 8;
     interleaved2of5 = 9;
-    upce = 10;
-    pdf417 = 11;
+    upca = 10;
+    upce = 11;
+    pdf417 = 12;
 }
 // protos/configuration.proto
 
