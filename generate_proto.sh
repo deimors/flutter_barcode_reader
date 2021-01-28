@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 PROTO_OUT_FILE="./protos/protos.proto"
 
 if [ -f "$PROTO_OUT_FILE" ]; then
@@ -32,6 +32,5 @@ done
 
 protoc \
 --dart_out="./lib/gen" \
---swift_out=./ios/Classes \
 "$PROTO_OUT_FILE"
 
